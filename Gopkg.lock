@@ -2,44 +2,116 @@
 
 
 [[projects]]
+  digest = "1:97c6de000f6d18225598887636f61eed1b4044c25739bb13256beae25823bfb1"
   name = "github.com/go-kit/kit"
-  packages = ["log","log/level"]
+  packages = [
+    "log",
+    "log/level",
+  ]
+  pruneopts = ""
   revision = "a9ca6725cbbea455e61c6bc8a1ed28e81eb3493b"
   version = "v0.5.0"
 
 [[projects]]
+  digest = "1:6a4a01d58b227c4b6b11111b9f172ec5c17682b82724e58e6daf3f19f4faccd8"
   name = "github.com/go-logfmt/logfmt"
   packages = ["."]
+  pruneopts = ""
   revision = "390ab7935ee28ec6b286364bba9b4dd6410cb3d5"
   version = "v0.3.0"
 
 [[projects]]
+  digest = "1:996761b4652a3dec771aa335202ed1f257206f94d05519b6babffdeaf87dc7e6"
   name = "github.com/go-stack/stack"
   packages = ["."]
+  pruneopts = ""
   revision = "817915b46b97fd7bb80e8ab6b69f01a53ac3eebf"
   version = "v1.6.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:1ed9eeebdf24aadfbca57eb50e6455bd1d2474525e0f0d4454de8c8e9bc7ee9a"
   name = "github.com/kr/logfmt"
   packages = ["."]
+  pruneopts = ""
   revision = "b84e30acd515aadc4b783ad4ff83aff3299bdfe0"
 
 [[projects]]
+  branch = "master"
+  digest = "1:512c304ab810d2479cb048c9695ccee82c912dea0da7bd54ef52446d8a5f6c48"
+  name = "github.com/micromdm/go4"
+  packages = [
+    "env",
+    "httputil",
+    "version",
+  ]
+  pruneopts = ""
+  revision = "654e10aaab18f3f75baa0b655fad1a24d48810d3"
+
+[[projects]]
+  digest = "1:7365acd48986e205ccb8652cc746f09c8b7876030d53710ea6ef7d0bd0dcd7ca"
   name = "github.com/pkg/errors"
   packages = ["."]
+  pruneopts = ""
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:678eb8275bb8e3394737d136f55da106956c699fb4ccc3e72aa115123cd28d0d"
   name = "golang.org/x/crypto"
-  packages = ["acme","acme/autocert"]
-  revision = "2faea1465de239e4babd8f5905cc25b781712442"
+  packages = [
+    "acme",
+    "acme/autocert",
+  ]
+  pruneopts = ""
+  revision = "5c72a883971a4325f8c62bf07b6d38c20ea47a6a"
+
+[[projects]]
+  branch = "master"
+  digest = "1:6328971ba64f6476ca35920ff04f1be7f04c35ce450d0fbe8f65f82c1cd2c6ab"
+  name = "golang.org/x/net"
+  packages = ["idna"]
+  pruneopts = ""
+  revision = "62affa334b73ec65ed44a326519ac12c421905e3"
+
+[[projects]]
+  digest = "1:fccda34e4c58111b1908d8d69bf8d57c41c8e2542bc18ec8cd38c4fa21057f71"
+  name = "golang.org/x/text"
+  packages = [
+    "collate",
+    "collate/build",
+    "internal/colltab",
+    "internal/gen",
+    "internal/language",
+    "internal/language/compact",
+    "internal/tag",
+    "internal/triegen",
+    "internal/ucd",
+    "language",
+    "secure/bidirule",
+    "transform",
+    "unicode/bidi",
+    "unicode/cldr",
+    "unicode/norm",
+    "unicode/rangetable",
+  ]
+  pruneopts = ""
+  revision = "23ae387dee1f90d29a23c0e87ee0b46038fbed0e"
+  version = "v0.3.3"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "8a88799f854b4907088c560e89228db62dd29eaaceec6a1b84bc179a3702c4a0"
+  input-imports = [
+    "github.com/go-kit/kit/log",
+    "github.com/go-kit/kit/log/level",
+    "github.com/micromdm/go4/env",
+    "github.com/micromdm/go4/httputil",
+    "github.com/micromdm/go4/version",
+    "github.com/pkg/errors",
+    "golang.org/x/crypto/acme",
+    "golang.org/x/crypto/acme/autocert",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
